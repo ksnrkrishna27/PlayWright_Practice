@@ -1,9 +1,6 @@
-import {test,expect,Browser,Page,Locator} from "@playwright/test"
-import { chromium } from "playwright";
+import {test,expect,Page,Locator} from "@playwright/test"
 
 import {login,logout} from "../../tests/ReusableCode/ReusableCode.spec"
-import { log } from "console";
-import { strict } from "assert";
 
 let email_id : string = "abcz1@gmail.com";
 let password : string = "abc123";

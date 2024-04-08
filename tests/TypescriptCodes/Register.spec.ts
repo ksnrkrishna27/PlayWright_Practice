@@ -28,6 +28,4 @@ test("Registering a User", async() => {
 
     page.close();
 
-    
-
 })
