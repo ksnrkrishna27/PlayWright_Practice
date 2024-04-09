@@ -1,5 +1,4 @@
 import {test,expect,Browser,Page,Locator} from "@playwright/test"
-import { log } from "console";
 import { chromium } from "playwright";
 import { Context } from "vm";
 
@@ -55,3 +54,4 @@ export const logout = async (logout_page : Page)=> {
 
 
 }
+
