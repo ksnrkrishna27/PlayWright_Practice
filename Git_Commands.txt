@@ -1,8 +1,23 @@
-  Git Commands after file modifications
+git branch (To Check the selected branch)
+git pull origin master (To Update the master branch)
+git checkout -b <"new branch name"> (To create new branch)
 
-  git add <file_name>
-  git commit -m "Your commit message"
-  git push -u origin "<branch_name>"
+git status (To check the files which are modified or newly added)
 
-  //To Run a particular test using tags
-  npx playwright test --grep @tagname
+//Git Commands after file modifications
+
+git add . (To add all changes to the staging area)  or  git add <file_name> (To add a particular file)
+git commit -m "<Comment>"
+git push -u origin "<new branch name>" (To push the changes to github, we can remove -u if the branch is already created)
+
+
+
+
+//To Run the Tests
+npx playwright test
+
+//To Run the Tests using playwright UI mode
+npx playwright test --ui
+
+//To Run a particular test using tags
+npx playwright test --grep @tagname
