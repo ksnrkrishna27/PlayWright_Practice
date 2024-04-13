@@ -4,7 +4,7 @@ import { before } from "node:test";
 import { webkit,chromium,firefox } from "playwright"
 
 
-    test("login functionality", async() => {
+    test("login functionality",{tag:'@login'},async() => {
 
         const browser : Browser = await chromium.launch({channel : 'chrome'});
         const page : Page = await browser.newPage();

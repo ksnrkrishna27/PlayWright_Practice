@@ -2,4 +2,7 @@
 
   git add <file_name>
   git commit -m "Your commit message"
-  git push -u origin master
+  git push -u origin "<branch_name>"
+
+  //To Run a particular test using tags
+  npx playwright test --grep @tagname

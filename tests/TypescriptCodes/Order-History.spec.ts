@@ -1,8 +1,11 @@
 import {test,expect,Page,Locator} from "@playwright/test"
 import {login,logout} from "../../tests/ReusableCode/ReusableCode.spec"
+import { describe } from "node:test"
 
 
-test("Order History flow1", async()=>{
+describe('Order History flows', ()=> {   
+
+test("Order History flow1",{tag: ['@flow1','@Order-Historyflows']}, async()=>{
 
     const new_page : Page = await login("abcz1@gmail.com","abc123")
 
@@ -20,7 +23,7 @@ test("Order History flow1", async()=>{
 
 })
 
-test("Order History flow2", async() =>{
+test("Order History flow2",{tag: ['@flow2','@Order-Historyflows']}, async() =>{
 
     const new_page : Page = await login("abcz1@gmail.com","abc123");
 
@@ -41,3 +44,5 @@ test("Order History flow2", async() =>{
 
 
 })
+
+});

@@ -1,7 +1,7 @@
 import {test,expect,Locator,Page, Browser, chromium} from "@playwright/test"
 import { login } from "../ReusableCode/ReusableCode.spec"
 
-test("Registering a User", async() => {
+test("Registering a User",{tag:'@Register'}, async() => {
     
     const browser : Browser = await chromium.launch();
     const page : Page = await browser.newPage();
