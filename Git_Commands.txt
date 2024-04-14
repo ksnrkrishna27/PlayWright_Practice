@@ -11,6 +11,7 @@ git commit -m "<Comment>"
 git push -u origin "<new branch name>" (To push the changes to github, we can remove -u if the branch is already created)
 
 
+
 //To Run the Tests
 npx playwright test
 
