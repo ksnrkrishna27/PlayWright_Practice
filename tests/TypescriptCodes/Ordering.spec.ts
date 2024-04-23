@@ -1,6 +1,6 @@
 import {test,expect,Page,Locator} from "@playwright/test"
 
-import {login,logout} from "../../tests/ReusableCode/ReusableCode.spec"
+import {login,logout} from "../ReusableCode/util"
 
 let email_id : string = "abcz1@gmail.com";
 let password : string = "abc123";
