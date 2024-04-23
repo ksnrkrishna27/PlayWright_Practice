@@ -4,7 +4,7 @@ import { Context } from "vm";
 
 
 
-export const login = async (email_id :string,pwvalue : string)=> {
+export async function login(email_id :string,pwvalue : string) {
 
         //const Browser_instance : {browser : Browser, context : Context, page : Page};
         const browser : Browser = await chromium.launch();
@@ -31,7 +31,7 @@ export const login = async (email_id :string,pwvalue : string)=> {
         return page;
 }
 
-export const logout = async (logout_page : Page)=> {
+export async function logout(logout_page : Page) {
     
 
     const My_Account_locator : Locator = await logout_page.locator('//*[@id="top-links"]/ul/li[2]/a/span[1]');

@@ -1,5 +1,5 @@
 import {test,expect,Page,Locator} from "@playwright/test"
-import {login,logout} from "../../tests/ReusableCode/ReusableCode.spec"
+import {login,logout} from "../ReusableCode/util"
 import { describe } from "node:test"
 
 

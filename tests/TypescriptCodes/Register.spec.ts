@@ -1,5 +1,5 @@
 import {test,expect,Locator,Page, Browser, chromium} from "@playwright/test"
-import { login } from "../ReusableCode/ReusableCode.spec"
+import { login } from "../ReusableCode/util"
 
 test("Registering a User",{tag:'@Register'}, async() => {
     
