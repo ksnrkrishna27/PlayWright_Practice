@@ -20,3 +20,13 @@ npx playwright test --ui
 
 //To Run a particular test using tags
 npx playwright test --grep @tagname
+
+//To update the master branch in local and then update the feature branch using master branch
+git checkout master
+git fetch -p origin
+git merge origin/master
+git rebase origin/master
+git checkout <feature_branch>
+git merge master
+git rebase master
+
